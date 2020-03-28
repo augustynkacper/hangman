@@ -1,0 +1,99 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+h1{
+    font-size:70px;
+    font-weight: 900;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+}
+
+
+ input[type="text"]{
+    width:30px;
+    font-size:30px;
+    border:none;
+    border-bottom:3px solid black;
+    outline: none;
+    margin-right:10px;
+}
+label{
+    font-size:30px;
+}
+input[type="submit"]{
+    font-size:20px;
+    padding:5px;
+    border:none;
+    background-color: black;
+    color:white;
+    border-radius: 6px;
+}
+
+.correct1, .wrong1, .correct2, .wrong2{
+    position: absolute;
+    font-size:30px;
+    right:50%;
+    transform: translateX(50%);
+    margin-top:20px;
+}
+
+.correct1,.correct2{color:green; opacity:0;}
+.wrong1,.wrong2{color:red; opacity:0;}
+
+.word{
+    margin-top:80px;
+    font-size:40px;
+}
+
+.image{
+    position: absolute;
+    right:50%;
+    transform: translateX(50%);
+    top:300px;
+}
+
+.displayNO{
+    display:none;
+}
+
+.lost{
+    font-size:60px;
+    padding-top:60px;
+    color:red;
+    position: absolute;
+    top:50px;
+    right:50%;
+    transform: translateX(50%);
+    width:100%;
+}
+.won{
+    font-size:60px;
+    top:100px;
+    right:50%;
+    transform: translateX(50%);
+    color:green;
+    position: absolute;
+    width:100%;
+}
+
+.wordoutput{
+    position:absolute;
+    top:130px;
+    right:50%;
+    transform: translateX(50%);
+    width:100%;
+}
+
+
+
+
+@keyframes fading{
+    0%{opacity:0;}
+    25%{opacity:1;}
+    75%{opacity:1;}
+    100%{opacity:0;}
+}
