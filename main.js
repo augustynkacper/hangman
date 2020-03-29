@@ -31,7 +31,7 @@ const game = () =>{
         var check=false;
         e.preventDefault();
         // Get Guess
-        var guess = document.querySelector('.guess').value;
+        var guess = (document.querySelector('.guess').value).toLowerCase();
         console.log(imageDiv);
         // Check If 1 Letter Typed
         if(guess.length>1){
